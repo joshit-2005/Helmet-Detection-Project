@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bike Helmet & Number Plate Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🏍️ Smart Helmet & Number Plate Detection</h1>
+        <div class="upload-area" id="uploadArea">
+            <h3>Click or drag & drop bike image</h3>
+            <p>Supported: JPG, PNG (Max 16MB)</p>
+            <input type="file" id="fileInput" accept="image/*">
+        </div>
+        <div id="result" class="result-hidden"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
