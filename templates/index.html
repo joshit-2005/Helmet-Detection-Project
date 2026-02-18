@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bike Helmet & Number Plate Detection</title>
+    <title>Two-Stage Helmet Detection System</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="container">
-        <h1>🏍️ Smart Helmet & Number Plate Detection</h1>
+        <h1>🚨 Smart Helmet Compliance System</h1>
+        <p>AI Pipeline: Face Detection → Head ROI → Helmet Verification</p>
+        
         <div class="upload-area" id="uploadArea">
-            <h3>Click or drag & drop bike image</h3>
-            <p>Supported: JPG, PNG (Max 16MB)</p>
+            <h3>📤 Upload Bike/Traffic Image</h3>
+            <p>Click or drag & drop (JPG, PNG - max 16MB)</p>
             <input type="file" id="fileInput" accept="image/*">
         </div>
+        
         <div id="result" class="result-hidden"></div>
     </div>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
